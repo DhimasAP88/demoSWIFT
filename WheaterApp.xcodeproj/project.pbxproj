@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3AFF598B9EA1D92357EFEF65 /* Pods_WheaterApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F36DE99C5FB4752316423EF /* Pods_WheaterApp.framework */; };
+		3B347B08F93320B586F72FE1 /* Pods_WheaterAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3BA79C407BB5400832EA5B /* Pods_WheaterAppUITests.framework */; };
+		6EF5EC26CD015D67901CB95F /* Pods_WheaterAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83CC3C005383647C376CFAD /* Pods_WheaterAppTests.framework */; };
+		B8ACCD2E2157D6FA00ADE11A /* wheater.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8ACCD2D2157D6FA00ADE11A /* wheater.jpg */; };
+		B8DD558521536841005C0392 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DD558421536841005C0392 /* AppDelegate.swift */; };
+		B8DD558721536841005C0392 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DD558621536841005C0392 /* ViewController.swift */; };
+		B8DD558A21536841005C0392 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8DD558821536841005C0392 /* Main.storyboard */; };
+		B8DD558C21536845005C0392 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8DD558B21536845005C0392 /* Assets.xcassets */; };
+		B8DD558F21536845005C0392 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8DD558D21536845005C0392 /* LaunchScreen.storyboard */; };
+		B8DD559A21536846005C0392 /* WheaterAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DD559921536846005C0392 /* WheaterAppTests.swift */; };
+		B8DD55A521536846005C0392 /* WheaterAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DD55A421536846005C0392 /* WheaterAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B8DD559621536846005C0392 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8DD557921536841005C0392 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8DD558021536841005C0392;
+			remoteInfo = WheaterApp;
+		};
+		B8DD55A121536846005C0392 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8DD557921536841005C0392 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8DD558021536841005C0392;
+			remoteInfo = WheaterApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DCBED99ABD6A82D025A9227 /* Pods-WheaterApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheaterApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WheaterApp/Pods-WheaterApp.release.xcconfig"; sourceTree = "<group>"; };
+		4C3BA79C407BB5400832EA5B /* Pods_WheaterAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WheaterAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		527DACD199261F1AA58F9C7B /* Pods-WheaterAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheaterAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WheaterAppTests/Pods-WheaterAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		555FD9E0711F0ED685574633 /* Pods-WheaterAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheaterAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WheaterAppTests/Pods-WheaterAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		677C23B87CA102A30A135205 /* Pods-WheaterAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheaterAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WheaterAppUITests/Pods-WheaterAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F36DE99C5FB4752316423EF /* Pods_WheaterApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WheaterApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80C1053789F8B84C9D86C649 /* Pods-WheaterApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheaterApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WheaterApp/Pods-WheaterApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A697577DC6207C096D961546 /* Pods-WheaterAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheaterAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WheaterAppUITests/Pods-WheaterAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B8ACCD2D2157D6FA00ADE11A /* wheater.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wheater.jpg; sourceTree = "<group>"; };
+		B8DD558121536841005C0392 /* WheaterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheaterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8DD558421536841005C0392 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B8DD558621536841005C0392 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B8DD558921536841005C0392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B8DD558B21536845005C0392 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8DD558E21536845005C0392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B8DD559021536845005C0392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8DD559521536846005C0392 /* WheaterAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WheaterAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8DD559921536846005C0392 /* WheaterAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheaterAppTests.swift; sourceTree = "<group>"; };
+		B8DD559B21536846005C0392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8DD55A021536846005C0392 /* WheaterAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WheaterAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8DD55A421536846005C0392 /* WheaterAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheaterAppUITests.swift; sourceTree = "<group>"; };
+		B8DD55A621536846005C0392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C83CC3C005383647C376CFAD /* Pods_WheaterAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WheaterAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B8DD557E21536841005C0392 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AFF598B9EA1D92357EFEF65 /* Pods_WheaterApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8DD559221536846005C0392 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EF5EC26CD015D67901CB95F /* Pods_WheaterAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8DD559D21536846005C0392 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B347B08F93320B586F72FE1 /* Pods_WheaterAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07E3A21F04CCBBB09A4AB4A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80C1053789F8B84C9D86C649 /* Pods-WheaterApp.debug.xcconfig */,
+				0DCBED99ABD6A82D025A9227 /* Pods-WheaterApp.release.xcconfig */,
+				527DACD199261F1AA58F9C7B /* Pods-WheaterAppTests.debug.xcconfig */,
+				555FD9E0711F0ED685574633 /* Pods-WheaterAppTests.release.xcconfig */,
+				677C23B87CA102A30A135205 /* Pods-WheaterAppUITests.debug.xcconfig */,
+				A697577DC6207C096D961546 /* Pods-WheaterAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7ABA03D0362C5D1B965F6099 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F36DE99C5FB4752316423EF /* Pods_WheaterApp.framework */,
+				C83CC3C005383647C376CFAD /* Pods_WheaterAppTests.framework */,
+				4C3BA79C407BB5400832EA5B /* Pods_WheaterAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8DD557821536841005C0392 = {
+			isa = PBXGroup;
+			children = (
+				B8DD558321536841005C0392 /* WheaterApp */,
+				B8DD559821536846005C0392 /* WheaterAppTests */,
+				B8DD55A321536846005C0392 /* WheaterAppUITests */,
+				B8DD558221536841005C0392 /* Products */,
+				07E3A21F04CCBBB09A4AB4A7 /* Pods */,
+				7ABA03D0362C5D1B965F6099 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B8DD558221536841005C0392 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8DD558121536841005C0392 /* WheaterApp.app */,
+				B8DD559521536846005C0392 /* WheaterAppTests.xctest */,
+				B8DD55A021536846005C0392 /* WheaterAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8DD558321536841005C0392 /* WheaterApp */ = {
+			isa = PBXGroup;
+			children = (
+				B8ACCD2D2157D6FA00ADE11A /* wheater.jpg */,
+				B8DD558421536841005C0392 /* AppDelegate.swift */,
+				B8DD558621536841005C0392 /* ViewController.swift */,
+				B8DD558821536841005C0392 /* Main.storyboard */,
+				B8DD558B21536845005C0392 /* Assets.xcassets */,
+				B8DD558D21536845005C0392 /* LaunchScreen.storyboard */,
+				B8DD559021536845005C0392 /* Info.plist */,
+			);
+			path = WheaterApp;
+			sourceTree = "<group>";
+		};
+		B8DD559821536846005C0392 /* WheaterAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B8DD559921536846005C0392 /* WheaterAppTests.swift */,
+				B8DD559B21536846005C0392 /* Info.plist */,
+			);
+			path = WheaterAppTests;
+			sourceTree = "<group>";
+		};
+		B8DD55A321536846005C0392 /* WheaterAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B8DD55A421536846005C0392 /* WheaterAppUITests.swift */,
+				B8DD55A621536846005C0392 /* Info.plist */,
+			);
+			path = WheaterAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B8DD558021536841005C0392 /* WheaterApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8DD55A921536846005C0392 /* Build configuration list for PBXNativeTarget "WheaterApp" */;
+			buildPhases = (
+				E30DD7580660788EDDB44593 /* [CP] Check Pods Manifest.lock */,
+				B8DD557D21536841005C0392 /* Sources */,
+				B8DD557E21536841005C0392 /* Frameworks */,
+				B8DD557F21536841005C0392 /* Resources */,
+				7868E56E1CA91DF9D32190D6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WheaterApp;
+			productName = WheaterApp;
+			productReference = B8DD558121536841005C0392 /* WheaterApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B8DD559421536846005C0392 /* WheaterAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8DD55AC21536846005C0392 /* Build configuration list for PBXNativeTarget "WheaterAppTests" */;
+			buildPhases = (
+				777951FDA4EDD20BB835A3F6 /* [CP] Check Pods Manifest.lock */,
+				B8DD559121536846005C0392 /* Sources */,
+				B8DD559221536846005C0392 /* Frameworks */,
+				B8DD559321536846005C0392 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8DD559721536846005C0392 /* PBXTargetDependency */,
+			);
+			name = WheaterAppTests;
+			productName = WheaterAppTests;
+			productReference = B8DD559521536846005C0392 /* WheaterAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B8DD559F21536846005C0392 /* WheaterAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8DD55AF21536846005C0392 /* Build configuration list for PBXNativeTarget "WheaterAppUITests" */;
+			buildPhases = (
+				349D300E6F4701C4D9E6E37B /* [CP] Check Pods Manifest.lock */,
+				B8DD559C21536846005C0392 /* Sources */,
+				B8DD559D21536846005C0392 /* Frameworks */,
+				B8DD559E21536846005C0392 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8DD55A221536846005C0392 /* PBXTargetDependency */,
+			);
+			name = WheaterAppUITests;
+			productName = WheaterAppUITests;
+			productReference = B8DD55A021536846005C0392 /* WheaterAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B8DD557921536841005C0392 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = BlackMamba;
+				TargetAttributes = {
+					B8DD558021536841005C0392 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					B8DD559421536846005C0392 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = B8DD558021536841005C0392;
+					};
+					B8DD559F21536846005C0392 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = B8DD558021536841005C0392;
+					};
+				};
+			};
+			buildConfigurationList = B8DD557C21536841005C0392 /* Build configuration list for PBXProject "WheaterApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B8DD557821536841005C0392;
+			productRefGroup = B8DD558221536841005C0392 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B8DD558021536841005C0392 /* WheaterApp */,
+				B8DD559421536846005C0392 /* WheaterAppTests */,
+				B8DD559F21536846005C0392 /* WheaterAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B8DD557F21536841005C0392 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8DD558F21536845005C0392 /* LaunchScreen.storyboard in Resources */,
+				B8DD558C21536845005C0392 /* Assets.xcassets in Resources */,
+				B8ACCD2E2157D6FA00ADE11A /* wheater.jpg in Resources */,
+				B8DD558A21536841005C0392 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8DD559321536846005C0392 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8DD559E21536846005C0392 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		349D300E6F4701C4D9E6E37B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WheaterAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		777951FDA4EDD20BB835A3F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WheaterAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7868E56E1CA91DF9D32190D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WheaterApp/Pods-WheaterApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WheaterApp/Pods-WheaterApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E30DD7580660788EDDB44593 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WheaterApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B8DD557D21536841005C0392 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8DD558721536841005C0392 /* ViewController.swift in Sources */,
+				B8DD558521536841005C0392 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8DD559121536846005C0392 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8DD559A21536846005C0392 /* WheaterAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8DD559C21536846005C0392 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8DD55A521536846005C0392 /* WheaterAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B8DD559721536846005C0392 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8DD558021536841005C0392 /* WheaterApp */;
+			targetProxy = B8DD559621536846005C0392 /* PBXContainerItemProxy */;
+		};
+		B8DD55A221536846005C0392 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8DD558021536841005C0392 /* WheaterApp */;
+			targetProxy = B8DD55A121536846005C0392 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B8DD558821536841005C0392 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8DD558921536841005C0392 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B8DD558D21536845005C0392 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8DD558E21536845005C0392 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B8DD55A721536846005C0392 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B8DD55A821536846005C0392 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B8DD55AA21536846005C0392 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80C1053789F8B84C9D86C649 /* Pods-WheaterApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WheaterApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.myApp.WheaterApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B8DD55AB21536846005C0392 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DCBED99ABD6A82D025A9227 /* Pods-WheaterApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WheaterApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.myApp.WheaterApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B8DD55AD21536846005C0392 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 527DACD199261F1AA58F9C7B /* Pods-WheaterAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WheaterAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.myApp.WheaterAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WheaterApp.app/WheaterApp";
+			};
+			name = Debug;
+		};
+		B8DD55AE21536846005C0392 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 555FD9E0711F0ED685574633 /* Pods-WheaterAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WheaterAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.myApp.WheaterAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WheaterApp.app/WheaterApp";
+			};
+			name = Release;
+		};
+		B8DD55B021536846005C0392 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 677C23B87CA102A30A135205 /* Pods-WheaterAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WheaterAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.myApp.WheaterAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WheaterApp;
+			};
+			name = Debug;
+		};
+		B8DD55B121536846005C0392 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A697577DC6207C096D961546 /* Pods-WheaterAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WheaterAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.myApp.WheaterAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WheaterApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B8DD557C21536841005C0392 /* Build configuration list for PBXProject "WheaterApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8DD55A721536846005C0392 /* Debug */,
+				B8DD55A821536846005C0392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8DD55A921536846005C0392 /* Build configuration list for PBXNativeTarget "WheaterApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8DD55AA21536846005C0392 /* Debug */,
+				B8DD55AB21536846005C0392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8DD55AC21536846005C0392 /* Build configuration list for PBXNativeTarget "WheaterAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8DD55AD21536846005C0392 /* Debug */,
+				B8DD55AE21536846005C0392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8DD55AF21536846005C0392 /* Build configuration list for PBXNativeTarget "WheaterAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8DD55B021536846005C0392 /* Debug */,
+				B8DD55B121536846005C0392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B8DD557921536841005C0392 /* Project object */;
+}
