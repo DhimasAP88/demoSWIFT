@@ -124,43 +124,50 @@ class ViewController: UIViewController {
         Alamofire.request(url).responseJSON { response in
             
             if let json = response.result.value {
-                self.requestDailyForcast(uniqueId: uniqueId)
+                
                 print("JSON: \(json)") // serialized json response
                 let jsondata = json  as? [[String: AnyObject]]
                 
-
-                for day in jsondata! {
-                    
-                    if  let day1 = day as? [String: Any], let resultDay1 = day1["WeatherText"] as? String {
-                        self.cuaca.text = resultDay1
-                    }
-                    
-                    if  let day1 = day as? [String: Any], let data = day1["Temperature"] as? [String: AnyObject], let subject = data["Metric"] as? [String: AnyObject], let addr = subject["Value"] as? Double {
-                        self.celciusDegree = Int(addr)
-                        self.temperatur.text = String(Int(addr)) + "°C"
-                    }
-                    
-                    if  let day1 = day as? [String: Any], let date1 = day1["LocalObservationDateTime"] as? String {
-                        let formatter:DateFormatter = DateFormatter()
-                        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-                        formatter.locale = NSLocale(localeIdentifier: "en_US_POSIX") as Locale?
-                        let formaterDate = formatter.date(from: date1)
+                if (jsondata == nil) {
+                    let error = json as? [String: Any]
+                    let error1 = error!["Message"] as? String
+                    self.showAlert(message: error1!)
+                } else {
+                    self.requestDailyForcast(uniqueId: uniqueId)
+                    for day in jsondata! {
                         
-                        formatter.dateFormat = "dd/MMM/yyyy HH:mm"
-                        let dateString:String = formatter.string(from: formaterDate!)
+                        if  let day1 = day as? [String: Any], let resultDay1 = day1["WeatherText"] as? String {
+                            self.cuaca.text = resultDay1
+                        }
                         
-                        self.dateTime.text = dateString
-                    }
-                    
-                    if let day1 = day as? [String: Any], let data = day1["WeatherIcon"] as? Int {
-                        let aselole = "https://vortex.accuweather.com/adc2010/m/images/icons/600x212/slate/"+String(data)+".png"
-                        if let url = NSURL(string: aselole) {
-                            if let data = NSData(contentsOf: url as URL) {
-                                self.wheaterIcon.image = UIImage(data: data as Data)
+                        if  let day1 = day as? [String: Any], let data = day1["Temperature"] as? [String: AnyObject], let subject = data["Metric"] as? [String: AnyObject], let addr = subject["Value"] as? Double {
+                            self.celciusDegree = Int(addr)
+                            self.temperatur.text = String(Int(addr)) + "°C"
+                        }
+                        
+                        if  let day1 = day as? [String: Any], let date1 = day1["LocalObservationDateTime"] as? String {
+                            let formatter:DateFormatter = DateFormatter()
+                            formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+                            formatter.locale = NSLocale(localeIdentifier: "en_US_POSIX") as Locale?
+                            let formaterDate = formatter.date(from: date1)
+                            
+                            formatter.dateFormat = "dd/MMM/yyyy HH:mm"
+                            let dateString:String = formatter.string(from: formaterDate!)
+                            
+                            self.dateTime.text = dateString
+                        }
+                        
+                        if let day1 = day as? [String: Any], let data = day1["WeatherIcon"] as? Int {
+                            let aselole = "https://vortex.accuweather.com/adc2010/m/images/icons/600x212/slate/"+String(format: "%02d", data)+".png"
+                            if let url = NSURL(string: aselole) {
+                                if let data = NSData(contentsOf: url as URL) {
+                                    self.wheaterIcon.image = UIImage(data: data as Data)
+                                }
                             }
                         }
                     }
                 }
+                
                 
             }
         }
@@ -174,37 +181,43 @@ class ViewController: UIViewController {
             if let json = response.result.value {
                 print("JSON: \(json)")
                 let jsondata = json as? [String: AnyObject]
-                let dailyforcase = jsondata!["DailyForecasts"] as? [[String: AnyObject]]
-                for daily in dailyforcase! {
-                    let today = daily as? [String: Any]
-                    let dayweather = today!["Day"] as? [String: Any]
-                    iconday = (dayweather?["Icon"] as? Int)!
-                    let phraseday = dayweather!["IconPhrase"] as? String
-                    
-                    let nightweather = today!["Night"] as? [String: Any]
-                    iconnight = (nightweather!["Icon"] as? Int)!
-                    let phrasenight = nightweather!["IconPhrase"] as? String
-                    
-                    
-                    
-                    let urlimageday = "https://vortex.accuweather.com/adc2010/images/slate/icons/" + String(iconday) + ".svg"
-                    if let url = NSURL(string: urlimageday) {
-                        let request: NSURLRequest = NSURLRequest(url: url as URL)
-                        self.imageday.loadRequest(request as URLRequest)
-//                        if let data = NSData(contentsOf: url as URL) {
-//                            self.wheaterIconDay.image = UIImage(data: data as Data)
-//                        }
-                    }
-                    self.wheaterDayTxt.text = phraseday
-                    
-                    self.wheaterNigthTxt.text = phrasenight
-                    let urlimagenight = "https://vortex.accuweather.com/adc2010/images/slate/icons/" + String(iconnight) + ".svg"
-                    if let url = NSURL(string: urlimagenight) {
-//                        if let data = NSData(contentsOf: url as URL) {
-//                            self.wheaterIconNight.image = UIImage(data: data as Data)
-//                        }
-                        let request: NSURLRequest = NSURLRequest(url: url as URL)
-                        self.imagenight.loadRequest(request as URLRequest)
+                if (jsondata == nil) {
+                    let error = json as? [String: Any]
+                    let error1 = error!["Message"] as? String
+                    self.showAlert(message: error1!)
+                } else {
+                    let dailyforcase = jsondata!["DailyForecasts"] as? [[String: AnyObject]]
+                    for daily in dailyforcase! {
+                        let today = daily as? [String: Any]
+                        let dayweather = today!["Day"] as? [String: Any]
+                        iconday = (dayweather?["Icon"] as? Int)!
+                        let phraseday = dayweather!["IconPhrase"] as? String
+                        
+                        let nightweather = today!["Night"] as? [String: Any]
+                        iconnight = (nightweather!["Icon"] as? Int)!
+                        let phrasenight = nightweather!["IconPhrase"] as? String
+                        
+                        
+                        
+                        let urlimageday = "https://vortex.accuweather.com/adc2010/images/slate/icons/" + String(iconday) + ".svg"
+                        if let url = NSURL(string: urlimageday) {
+                            let request: NSURLRequest = NSURLRequest(url: url as URL)
+                            self.imageday.loadRequest(request as URLRequest)
+                            //                        if let data = NSData(contentsOf: url as URL) {
+                            //                            self.wheaterIconDay.image = UIImage(data: data as Data)
+                            //                        }
+                        }
+                        self.wheaterDayTxt.text = phraseday
+                        
+                        self.wheaterNigthTxt.text = phrasenight
+                        let urlimagenight = "https://vortex.accuweather.com/adc2010/images/slate/icons/" + String(iconnight) + ".svg"
+                        if let url = NSURL(string: urlimagenight) {
+                            //                        if let data = NSData(contentsOf: url as URL) {
+                            //                            self.wheaterIconNight.image = UIImage(data: data as Data)
+                            //                        }
+                            let request: NSURLRequest = NSURLRequest(url: url as URL)
+                            self.imagenight.loadRequest(request as URLRequest)
+                        }
                     }
                 }
             }
@@ -220,6 +233,24 @@ class ViewController: UIViewController {
             self.temperatur.text = String(fahrenheitTemperature) + "°F"
             isFarenheit = true
         }
+    }
+    
+    private func showAlert(message: String) {
+        let alert = UIAlertController(title: "Service Unavailable", message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            switch action.style{
+            case .default:
+                print("default")
+                
+            case .cancel:
+                print("cancel")
+                
+            case .destructive:
+                print("destructive")
+                
+                
+            }}))
+        self.present(alert, animated: true, completion: nil)
     }
 }
 
