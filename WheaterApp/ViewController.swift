@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import SDWebImage
 
 class ViewController: UIViewController {
 
@@ -158,12 +159,8 @@ class ViewController: UIViewController {
                         }
                         
                         if let day1 = day as? [String: Any], let data = day1["WeatherIcon"] as? Int {
-                            let aselole = "https://vortex.accuweather.com/adc2010/m/images/icons/600x212/slate/"+String(format: "%02d", data)+".png"
-                            if let url = NSURL(string: aselole) {
-                                if let data = NSData(contentsOf: url as URL) {
-                                    self.wheaterIcon.image = UIImage(data: data as Data)
-                                }
-                            }
+                            let urlIcon = "https://vortex.accuweather.com/adc2010/m/images/icons/600x212/slate/"+String(format: "%02d", data)+".png"
+                            self.wheaterIcon.sd_setImage(with: URL(string: urlIcon), placeholderImage: UIImage(named: "sun.png"))
                         }
                     }
                 }
@@ -203,18 +200,12 @@ class ViewController: UIViewController {
                         if let url = NSURL(string: urlimageday) {
                             let request: NSURLRequest = NSURLRequest(url: url as URL)
                             self.imageday.loadRequest(request as URLRequest)
-                            //                        if let data = NSData(contentsOf: url as URL) {
-                            //                            self.wheaterIconDay.image = UIImage(data: data as Data)
-                            //                        }
                         }
                         self.wheaterDayTxt.text = phraseday
                         
                         self.wheaterNigthTxt.text = phrasenight
                         let urlimagenight = "https://vortex.accuweather.com/adc2010/images/slate/icons/" + String(iconnight) + ".svg"
                         if let url = NSURL(string: urlimagenight) {
-                            //                        if let data = NSData(contentsOf: url as URL) {
-                            //                            self.wheaterIconNight.image = UIImage(data: data as Data)
-                            //                        }
                             let request: NSURLRequest = NSURLRequest(url: url as URL)
                             self.imagenight.loadRequest(request as URLRequest)
                         }

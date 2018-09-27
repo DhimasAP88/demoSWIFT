@@ -10,6 +10,8 @@
 		3AFF598B9EA1D92357EFEF65 /* Pods_WheaterApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F36DE99C5FB4752316423EF /* Pods_WheaterApp.framework */; };
 		3B347B08F93320B586F72FE1 /* Pods_WheaterAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3BA79C407BB5400832EA5B /* Pods_WheaterAppUITests.framework */; };
 		6EF5EC26CD015D67901CB95F /* Pods_WheaterAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83CC3C005383647C376CFAD /* Pods_WheaterAppTests.framework */; };
+		B8628B73215CBA1300F728CE /* rgb_1.png in Resources */ = {isa = PBXBuildFile; fileRef = B8628B72215CBA1300F728CE /* rgb_1.png */; };
+		B8628B75215CBBDB00F728CE /* sun.png in Resources */ = {isa = PBXBuildFile; fileRef = B8628B74215CBBDB00F728CE /* sun.png */; };
 		B8ACCD2E2157D6FA00ADE11A /* wheater.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B8ACCD2D2157D6FA00ADE11A /* wheater.jpg */; };
 		B8DD558521536841005C0392 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DD558421536841005C0392 /* AppDelegate.swift */; };
 		B8DD558721536841005C0392 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DD558621536841005C0392 /* ViewController.swift */; };
@@ -46,6 +48,8 @@
 		6F36DE99C5FB4752316423EF /* Pods_WheaterApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WheaterApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C1053789F8B84C9D86C649 /* Pods-WheaterApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheaterApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WheaterApp/Pods-WheaterApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A697577DC6207C096D961546 /* Pods-WheaterAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheaterAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WheaterAppUITests/Pods-WheaterAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B8628B72215CBA1300F728CE /* rgb_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rgb_1.png; sourceTree = "<group>"; };
+		B8628B74215CBBDB00F728CE /* sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sun.png; sourceTree = "<group>"; };
 		B8ACCD2D2157D6FA00ADE11A /* wheater.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wheater.jpg; sourceTree = "<group>"; };
 		B8DD558121536841005C0392 /* WheaterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheaterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8DD558421536841005C0392 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +143,8 @@
 		B8DD558321536841005C0392 /* WheaterApp */ = {
 			isa = PBXGroup;
 			children = (
+				B8628B74215CBBDB00F728CE /* sun.png */,
+				B8628B72215CBA1300F728CE /* rgb_1.png */,
 				B8ACCD2D2157D6FA00ADE11A /* wheater.jpg */,
 				B8DD558421536841005C0392 /* AppDelegate.swift */,
 				B8DD558621536841005C0392 /* ViewController.swift */,
@@ -276,6 +282,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8628B75215CBBDB00F728CE /* sun.png in Resources */,
+				B8628B73215CBA1300F728CE /* rgb_1.png in Resources */,
 				B8DD558F21536845005C0392 /* LaunchScreen.storyboard in Resources */,
 				B8DD558C21536845005C0392 /* Assets.xcassets in Resources */,
 				B8ACCD2E2157D6FA00ADE11A /* wheater.jpg in Resources */,
@@ -347,6 +355,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -354,6 +363,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -561,6 +571,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BWDVZ66VNS;
 				INFOPLIST_FILE = WheaterApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -579,6 +590,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BWDVZ66VNS;
 				INFOPLIST_FILE = WheaterApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

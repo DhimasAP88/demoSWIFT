@@ -14,6 +14,7 @@ def common_pods
     pod 'RxAlamofire', '~> 4.0'
     pod 'RxSwift', '~> 4.0'
     pod 'RxCocoa', '~> 4.0'
+    pod 'SDWebImage', '~> 4.0'
 end
 
 target 'WheaterApp' do
